@@ -1,4 +1,4 @@
-
+/*Format the Google Logo Img*/
 .center {
     max-width: 100%;
     max-height: 100%;
@@ -7,14 +7,15 @@
     width: auto;
 }
 
-
+/* Center Everything in Main */
 .main {
-    padding-top: 150px;
+    padding-top: 210px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/*Format the Navbar class using grid layouts */
 .navbar {
     display: grid;
     gap: 1rem;
@@ -24,6 +25,8 @@
 
 }
 
+/*Declaring Various Grid areas in order the customise the 
+layout of my grid. Also styling the elements in the navbar*/
 .about {
     grid-area: about;
     padding-left: 15px;
@@ -62,6 +65,7 @@
     margin-top: 5px;
 }
 
+/*Styling the Links*/
 a {
     text-decoration: none;
     color: #222;
@@ -70,3 +74,102 @@ a {
     font-family: Arial, sans-serif;
 } 
 
+/*Format the searchBar div using grid layout and borders*/
+.searchBar {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 20px, 150px;
+    grid-template-areas: "searchIcon searchText";
+    margin-top: 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    align-items: center;
+    padding: 12px;
+}
+
+/*Styling the searchText field and searchIcon field*/
+.searchText {
+    grid-area: searchText;
+    border: none;
+    outline: none;
+}
+
+.searchIcon {
+    grid-area: searchIcon;
+    opacity: 50%;
+}
+
+/*Styling the Google Search Buttons*/
+.searchButtons {
+    display: grid;
+    gap:  5px;
+    grid-template-columns: 150px 150px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.googleButton{
+    border: none;
+    margin: 5px;
+    padding: 12px;
+}
+
+/*Createing the footer Using the Grid Layout*/
+.footer {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns:  85px 85px 150px 1fr 60px 60px 60px;
+    grid-template-areas: "advertising business how-to . privacy terms settings";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+}
+
+.advertising {
+grid-area: advertising;
+}
+
+.business {
+    grid-area: business;
+    margin-left: 10px;
+}
+
+.how-to {
+    grid-area: how-to;
+    margin-left: 10px;
+}
+
+.privacy {
+    grid-area: privacy;
+}
+
+.terms {
+    grid-area: terms;
+}
+
+.settings {
+    grid-area: settings;
+    
+}
+
+/*Adding On Hover Effects*/
+
+.link-hover:hover {
+    text-decoration: underline;
+}
+
+.googleButton:hover{
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+
+.searchBar:hover {
+        background-color: #fff;
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+        border-color: rgba(223,225,229,0);
+}
