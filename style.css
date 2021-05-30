@@ -55,7 +55,7 @@ layout of my grid. Also styling the elements in the navbar*/
     grid-area: sign-in;
     text-align: center;
     padding: 9px 23px;
-    background: -moz-linear-gradient(top, #4387fd, #4683ea);
+    background: #1a73e8;
     border-radius: 4px;
     line-height: 16px;
     outline: none;
